@@ -1,0 +1,17 @@
+{
+  "name": "w3up-delegation-api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@web3-storage/w3up-client": "^2.1.1",
+    "fastify": "^4.7.0"
+  }
+}
