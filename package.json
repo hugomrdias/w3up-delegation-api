@@ -12,7 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@web3-storage/w3up-client": "^2.1.1",
-    "fastify": "^4.7.0"
+    "@web3-storage/w3up-client": "3.0.4",
+    "fastify": "^4.9.2"
+  },
+  "devDependencies": {
+    "@web3-storage/w3up-cli": "2.0.4"
   }
 }
