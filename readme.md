@@ -42,13 +42,13 @@ w3up id --profile secondary
 1. Delegate capabilities to a Agent DID:
 
 ```sh
-curl http://127.0.0.1:3000\?did\=did:key:z6M... --output test.car
+curl http://127.0.0.1:3000\?did\=did:key:z6M... --output delegation.txt
 ```
 
 7. Import UCAN elegation provided:
 
 ```sh
-w3up delegate import test.car main --profile secondary
+w3up delegate import delegation.txt main --profile secondary
 ```
 
 8. List uploads from main account the API uses

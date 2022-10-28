@@ -1,16 +1,16 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@web3-storage/w3up-cli': 2.0.4
-  '@web3-storage/w3up-client': 3.0.4
+  '@web3-storage/w3up-cli': ^2.1.0
+  '@web3-storage/w3up-client': ^3.1.0
   fastify: ^4.9.2
 
 dependencies:
-  '@web3-storage/w3up-client': 3.0.4
+  '@web3-storage/w3up-client': 3.1.0
   fastify: 4.9.2
 
 devDependencies:
-  '@web3-storage/w3up-cli': 2.0.4
+  '@web3-storage/w3up-cli': 2.1.0
 
 packages:
 
@@ -64,10 +64,25 @@ packages:
       cborg: 1.9.5
       multiformats: 9.9.0
 
+  /@ipld/dag-json/9.0.1:
+    resolution: {integrity: sha512-dL5Xhrk0XXoq3lSsY2LNNraH2Nxx4nlgQwSarl2J3oir2jBDQEiBDW8bjgr30ni8/epdWDhXm5mdxat8dFWwGQ==}
+    engines: {node: '>=16.0.0', npm: '>=7.0.0'}
+    dependencies:
+      cborg: 1.9.5
+      multiformats: 10.0.2
+    dev: true
+
   /@ipld/dag-pb/2.1.18:
     resolution: {integrity: sha512-ZBnf2fuX9y3KccADURG5vb9FaOeMjFkCrNysB0PtftME/4iCTjxfaLoNq/IAh5fTqUOMXvryN6Jyka4ZGuMLIg==}
     dependencies:
       multiformats: 9.9.0
+    dev: true
+
+  /@ipld/dag-pb/3.0.0:
+    resolution: {integrity: sha512-d9TYsiS/8ixtUnXRkpHU+4kkI1ZUN57n/HjMvK75uhezL1p9+heWryb/rv+Ztlbux9OW9Zus75lMjFoPbG36bw==}
+    engines: {node: '>=16.0.0', npm: '>=7.0.0'}
+    dependencies:
+      multiformats: 10.0.2
     dev: true
 
   /@ipld/dag-ucan/3.0.0-beta:
@@ -272,14 +287,14 @@ packages:
   /@web3-storage/multipart-parser/1.0.0:
     resolution: {integrity: sha512-BEO6al7BYqcnfX15W2cnGR+Q566ACXAT9UQykORCWW80lmkpWsnEob6zJS1ZVBKsSJC8+7vJkHwlp+lXG1UCdw==}
 
-  /@web3-storage/w3up-cli/2.0.4:
-    resolution: {integrity: sha512-so2MIWMZQAk6wXXDK3xaB7C7jt2XfzarpRspeTO0YOXmihFvDNrd+gFOIAO2jMQO+SXEUlTJ4XV3smAEYu5RrQ==}
+  /@web3-storage/w3up-cli/2.1.0:
+    resolution: {integrity: sha512-gQfTXHMu4jIxFo9eaOiE4UenB4xh3oUtpDYqK+VG2jlBNzNcfuetFIVCpXq35T8orP/QvTlINA2PB4q61fOdSQ==}
     hasBin: true
     dependencies:
       '@ipld/car': 4.1.6
       '@ipld/dag-cbor': 8.0.0
-      '@ipld/dag-json': 8.0.11
-      '@ipld/dag-pb': 2.1.18
+      '@ipld/dag-json': 9.0.1
+      '@ipld/dag-pb': 3.0.0
       '@ipld/unixfs': 1.1.0-dev
       '@ucanto/core': 1.0.1
       '@ucanto/interface': 1.0.0
@@ -287,7 +302,7 @@ packages:
       '@ucanto/server': 1.0.2
       '@ucanto/transport': 1.0.1
       '@web-std/stream': 1.0.1
-      '@web3-storage/w3up-client': 3.0.4
+      '@web3-storage/w3up-client': 3.1.0
       archy: 1.0.0
       cli-table: 0.3.11
       conf: 10.2.0
@@ -297,8 +312,9 @@ packages:
       open: 8.4.0
       ora: 6.1.2
       stream-to-it: 0.2.4
-      uint8arrays: 3.1.1
+      uint8arrays: 4.0.2
       uuid: 8.3.2
+      web-streams-polyfill: 3.2.1
       yargs: 17.6.0
     transitivePeerDependencies:
       - bufferutil
@@ -306,8 +322,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@web3-storage/w3up-client/3.0.4:
-    resolution: {integrity: sha512-pOwgZrAx3YLF0UKo68tnl3qVx9cwkDYF2T90mn3pudl+Y2OM/J+SuKT63XZulgk3Xza5RkjLOzfJqE5mKNa/ZA==}
+  /@web3-storage/w3up-client/3.1.0:
+    resolution: {integrity: sha512-XPQoHnkY45Zo1qfuz+9oVEU6qPDG+UnkTiroZcGHGVt6TvIwigHfaPzoNNLR3A3BWHX65SG6MOFIT+hU3qU+pg==}
     dependencies:
       '@ipld/car': 4.1.6
       '@ucanto/client': 1.0.1

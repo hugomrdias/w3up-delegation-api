@@ -9,25 +9,22 @@ const fastify = Fastify({
 
 // Setting exported form w3up cli using `w3up export-settings setttings.json`
 const raw = fs.readFileSync(path.join(process.cwd(), 'settings.json'), 'utf8')
-
-const config = new Map(Object.entries(JSON.parse(raw)))
 const client = createClient({
-  settings: raw,
+  settings: JSON.parse(raw),
 })
 
 fastify.get('/', async (request, reply) => {
-  const buf = await client.makeDelegation({
+  const buf = await client.exportDelegation({
     to: request.query.did,
   })
 
-  return reply.send(Buffer.from(buf))
+  return reply.send(buf)
 })
 
 fastify.get('/list', async (request, reply) => {
   const list = await client.list()
-  console.log('🚀 ~ file: index.js ~ line 28 ~ fastify.get ~ list', list)
 
-  return reply.send()
+  return list
 })
 
 /**
